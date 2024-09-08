@@ -1,0 +1,56 @@
+{
+  "listeners": {
+    "*:80": {
+      "pass": "routes",
+      "client_ip": {
+        "header": "X-Forwarded-For",
+        "source": [
+          "0.0.0.0/0"
+        ]
+      }
+    }
+  },
+  "routes": [
+    {
+      "match": {
+        "uri": [
+          "*.php",
+          "*.php/*"
+        ]
+      },
+      "action": {
+        "pass": "applications/php-app/direct"
+      }
+    },
+    {
+      "action": {
+        "share": "/var/www/html/webroot$uri",
+        "fallback": {
+          "pass": "applications/php-app/index"
+        }
+      }
+    }
+  ],
+  "applications": {
+    "php-app": {
+      "type": "php",
+      "processes": 4,
+      "options": {
+        "admin":  {
+          "error_reporting": "0"
+        }
+      },
+      "targets": {
+        "direct": {
+          "root": "/var/www/html/webroot/"
+        },
+        "index": {
+          "root": "/var/www/html/webroot/",
+          "script": "index.php"
+        }
+      },
+      "user": "www-data",
+      "group": "www-data"
+    }
+  }
+}

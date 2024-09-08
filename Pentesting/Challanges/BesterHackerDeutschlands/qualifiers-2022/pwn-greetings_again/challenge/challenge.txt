@@ -1,0 +1,23 @@
+Beschreibung:
+Die Flagge ist hier: /home/dbh/flag.txt.
+Diesmal gibt es keinen Source-Code aber dafür die genutzte libc :).
+
+Startpunktzahl:
+300
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+greetings_again
+libc-2.31.so
+
+Sha256:
+greetings_again: 1fefad143923158cf0199830abc35db253c141931d36596d8e0218cc1b15b03d
+libc-2.31.so : 73c7c1514bcfc624e277ba3e210e5f3475e60b0e32820747e79f026c1d0c6fbe  
+
+Verbindung:
+nc 20.126.227.19 4004

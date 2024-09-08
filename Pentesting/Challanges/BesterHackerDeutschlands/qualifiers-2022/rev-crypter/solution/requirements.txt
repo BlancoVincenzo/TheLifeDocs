@@ -1,0 +1,2 @@
+pycryptodomex==3.17
+pytz==2022.4

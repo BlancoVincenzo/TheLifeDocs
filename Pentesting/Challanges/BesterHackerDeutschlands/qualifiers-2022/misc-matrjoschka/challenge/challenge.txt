@@ -1,0 +1,19 @@
+Beschreibung:
+https://de.wikipedia.org/wiki/Matrjoschka
+
+Startpunktzahl:
+150
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+output.txt.zip
+
+Sha256: a9a84b47c769229d04210e66f0a5fd0b8943ea866c23f8cf4a0b159a08b71ee6
+
+Verbindung:
+-

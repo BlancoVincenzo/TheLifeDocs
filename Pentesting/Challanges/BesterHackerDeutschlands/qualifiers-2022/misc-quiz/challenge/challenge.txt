@@ -1,0 +1,20 @@
+Beschreibung:
+Sei schnell und löse das Quiz.
+
+Startpunktzahl:
+150
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+-
+
+Sha256:
+-
+
+Verbindung:
+nc 20.126.227.19 45377

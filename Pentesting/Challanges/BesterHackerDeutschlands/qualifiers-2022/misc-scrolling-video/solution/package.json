@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-extract-frames": "^2.0.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "jimp": "^0.16.1",
+    "natural-compare-lite": "^1.4.0"
+  }
+}

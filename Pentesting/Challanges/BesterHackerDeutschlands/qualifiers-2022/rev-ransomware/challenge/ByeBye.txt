@@ -1,0 +1,5 @@
+Hello,
+
+Your data has been encrypted!
+
+If you want to decrypt your data, send 0.1 BTC to this address: bc1qa5l4qek4faf49gg050llwnjnefdrv6f2j8ph88

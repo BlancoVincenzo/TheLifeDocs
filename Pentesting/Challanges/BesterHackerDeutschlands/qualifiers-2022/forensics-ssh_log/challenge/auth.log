@@ -1,0 +1,109 @@
+Jul  3 19:48:36 user-virtual-machine systemd-logind[853]: New seat seat0.
+Jul  3 19:48:36 user-virtual-machine systemd-logind[853]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul  3 19:48:36 user-virtual-machine systemd-logind[853]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Jul  3 19:48:36 user-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Jul  3 19:48:36 user-virtual-machine systemd-logind[853]: New session c1 of user gdm.
+Jul  3 19:48:36 user-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Jul  3 19:48:42 user-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.39 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul  3 19:50:02 user-virtual-machine gdm-password]: gkr-pam: unable to locate daemon control file
+Jul  3 19:50:02 user-virtual-machine gdm-password]: gkr-pam: stashed password to try later in open session
+Jul  3 19:50:02 user-virtual-machine gdm-password]: pam_unix(gdm-password:session): session opened for user user(uid=1000) by (uid=0)
+Jul  3 19:50:02 user-virtual-machine systemd-logind[853]: New session 2 of user user.
+Jul  3 19:50:02 user-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user user(uid=1000) by (uid=0)
+Jul  3 19:50:03 user-virtual-machine gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Jul  3 19:50:04 user-virtual-machine gnome-keyring-daemon[1651]: The PKCS#11 component was already initialized
+Jul  3 19:50:04 user-virtual-machine gnome-keyring-daemon[1651]: The SSH agent was already initialized
+Jul  3 19:50:04 user-virtual-machine gnome-keyring-daemon[1651]: The Secret Service was already initialized
+Jul  3 19:50:06 user-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.86 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul  3 19:50:11 user-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Jul  3 19:50:11 user-virtual-machine systemd-logind[853]: Session c1 logged out. Waiting for processes to exit.
+Jul  3 19:50:12 user-virtual-machine systemd-logind[853]: Removed session c1.
+Jul  3 19:50:12 user-virtual-machine polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.39, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jul  3 19:50:32 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/apt update
+Jul  3 19:50:32 user-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 19:50:44 user-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Jul  3 19:51:13 user-virtual-machine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 19:51:13 user-virtual-machine pkexec[3307]: user: Executing command [USER=root] [TTY=unknown] [CWD=/home/user] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Jul  3 19:51:27 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/apt upgrade
+Jul  3 19:51:27 user-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 19:54:30 user-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Jul  3 19:56:15 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/apt install openssh-server
+Jul  3 19:56:15 user-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 19:56:21 user-virtual-machine useradd[32190]: new user: name=sshd, UID=128, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Jul  3 19:56:21 user-virtual-machine usermod[32197]: change user 'sshd' password
+Jul  3 19:56:21 user-virtual-machine chage[32204]: changed password expiry for sshd
+Jul  3 19:56:22 user-virtual-machine sshd[32302]: Server listening on 0.0.0.0 port 22.
+Jul  3 19:56:22 user-virtual-machine sshd[32302]: Server listening on :: port 22.
+Jul  3 19:56:24 user-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Jul  3 19:56:27 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul  3 19:56:27 user-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 19:56:28 user-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Jul  3 19:56:36 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/sbin/ufw allow ssh
+Jul  3 19:56:37 user-virtual-machine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 19:56:37 user-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Jul  3 20:26:19 user-virtual-machine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Jul  3 20:26:19 user-virtual-machine pkexec[32525]: user: Executing command [USER=root] [TTY=unknown] [CWD=/home/user] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Jul  3 20:30:01 user-virtual-machine CRON[32561]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul  3 20:30:01 user-virtual-machine CRON[32561]: pam_unix(cron:session): session closed for user root
+Jul  3 20:40:43 user-virtual-machine gnome-keyring-daemon[1651]: couldn't initialize slot with master password: The password or PIN is incorrect
+Jul  3 20:40:43 user-virtual-machine gdm-password]: gkr-pam: unlocked login keyring
+Jul  3 20:41:02 user-virtual-machine sshd[32663]: Invalid user DBH from 192.168.241.147 port 43514
+Jul  3 20:41:02 user-virtual-machine sshd[32663]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:02 user-virtual-machine sshd[32663]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:04 user-virtual-machine sshd[32663]: Failed password for invalid user DBH from 192.168.241.147 port 43514 ssh2
+Jul  3 20:41:04 user-virtual-machine sshd[32663]: message repeated 2 times: [ Failed password for invalid user DBH from 192.168.241.147 port 43514 ssh2]
+Jul  3 20:41:04 user-virtual-machine sshd[32663]: Connection closed by invalid user DBH 192.168.241.147 port 43514 [preauth]
+Jul  3 20:41:04 user-virtual-machine sshd[32665]: Invalid user zwischen from 192.168.241.147 port 43516
+Jul  3 20:41:04 user-virtual-machine sshd[32665]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:04 user-virtual-machine sshd[32665]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:06 user-virtual-machine sshd[32665]: Failed password for invalid user zwischen from 192.168.241.147 port 43516 ssh2
+Jul  3 20:41:07 user-virtual-machine sshd[32665]: message repeated 2 times: [ Failed password for invalid user zwischen from 192.168.241.147 port 43516 ssh2]
+Jul  3 20:41:07 user-virtual-machine sshd[32665]: Connection closed by invalid user zwischen 192.168.241.147 port 43516 [preauth]
+Jul  3 20:41:08 user-virtual-machine sshd[32667]: Invalid user {bru73 from 192.168.241.147 port 43520
+Jul  3 20:41:08 user-virtual-machine sshd[32667]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:08 user-virtual-machine sshd[32667]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:09 user-virtual-machine sshd[32667]: Failed password for invalid user {bru73 from 192.168.241.147 port 43520 ssh2
+Jul  3 20:41:10 user-virtual-machine sshd[32667]: message repeated 2 times: [ Failed password for invalid user {bru73 from 192.168.241.147 port 43520 ssh2]
+Jul  3 20:41:10 user-virtual-machine sshd[32667]: Connection closed by invalid user {bru73 192.168.241.147 port 43520 [preauth]
+Jul  3 20:41:10 user-virtual-machine sshd[32669]: Invalid user den from 192.168.241.147 port 43522
+Jul  3 20:41:10 user-virtual-machine sshd[32669]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:10 user-virtual-machine sshd[32669]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:12 user-virtual-machine sshd[32669]: Failed password for invalid user den from 192.168.241.147 port 43522 ssh2
+Jul  3 20:41:12 user-virtual-machine sshd[32669]: message repeated 2 times: [ Failed password for invalid user den from 192.168.241.147 port 43522 ssh2]
+Jul  3 20:41:12 user-virtual-machine sshd[32669]: Connection closed by invalid user den 192.168.241.147 port 43522 [preauth]
+Jul  3 20:41:12 user-virtual-machine sshd[32674]: Invalid user _f0rc3 from 192.168.241.147 port 43524
+Jul  3 20:41:12 user-virtual-machine sshd[32674]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:12 user-virtual-machine sshd[32674]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:14 user-virtual-machine sshd[32674]: Failed password for invalid user _f0rc3 from 192.168.241.147 port 43524 ssh2
+Jul  3 20:41:15 user-virtual-machine sshd[32674]: message repeated 2 times: [ Failed password for invalid user _f0rc3 from 192.168.241.147 port 43524 ssh2]
+Jul  3 20:41:15 user-virtual-machine sshd[32674]: Connection closed by invalid user _f0rc3 192.168.241.147 port 43524 [preauth]
+Jul  3 20:41:15 user-virtual-machine sshd[32676]: Invalid user Zeilen from 192.168.241.147 port 43526
+Jul  3 20:41:15 user-virtual-machine sshd[32676]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:15 user-virtual-machine sshd[32676]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:17 user-virtual-machine sshd[32676]: Failed password for invalid user Zeilen from 192.168.241.147 port 43526 ssh2
+Jul  3 20:41:17 user-virtual-machine sshd[32676]: message repeated 2 times: [ Failed password for invalid user Zeilen from 192.168.241.147 port 43526 ssh2]
+Jul  3 20:41:17 user-virtual-machine sshd[32676]: Connection closed by invalid user Zeilen 192.168.241.147 port 43526 [preauth]
+Jul  3 20:41:17 user-virtual-machine sshd[32678]: Invalid user _4774ck5 from 192.168.241.147 port 43528
+Jul  3 20:41:17 user-virtual-machine sshd[32678]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:17 user-virtual-machine sshd[32678]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:19 user-virtual-machine sshd[32678]: Failed password for invalid user _4774ck5 from 192.168.241.147 port 43528 ssh2
+Jul  3 20:41:21 user-virtual-machine sshd[32678]: message repeated 2 times: [ Failed password for invalid user _4774ck5 from 192.168.241.147 port 43528 ssh2]
+Jul  3 20:41:21 user-virtual-machine sshd[32678]: Connection closed by invalid user _4774ck5 192.168.241.147 port 43528 [preauth]
+Jul  3 20:41:21 user-virtual-machine sshd[32680]: Invalid user lesen from 192.168.241.147 port 43530
+Jul  3 20:41:21 user-virtual-machine sshd[32680]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:21 user-virtual-machine sshd[32680]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:23 user-virtual-machine sshd[32680]: Failed password for invalid user lesen from 192.168.241.147 port 43530 ssh2
+Jul  3 20:41:24 user-virtual-machine sshd[32680]: message repeated 2 times: [ Failed password for invalid user lesen from 192.168.241.147 port 43530 ssh2]
+Jul  3 20:41:24 user-virtual-machine sshd[32680]: Connection closed by invalid user lesen 192.168.241.147 port 43530 [preauth]
+Jul  3 20:41:24 user-virtual-machine sshd[32682]: Invalid user _f7w from 192.168.241.147 port 43532
+Jul  3 20:41:24 user-virtual-machine sshd[32682]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:24 user-virtual-machine sshd[32682]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:27 user-virtual-machine sshd[32682]: Failed password for invalid user _f7w from 192.168.241.147 port 43532 ssh2
+Jul  3 20:41:27 user-virtual-machine sshd[32682]: message repeated 2 times: [ Failed password for invalid user _f7w from 192.168.241.147 port 43532 ssh2]
+Jul  3 20:41:27 user-virtual-machine sshd[32682]: Connection closed by invalid user _f7w 192.168.241.147 port 43532 [preauth]
+Jul  3 20:41:27 user-virtual-machine sshd[32684]: Invalid user } from 192.168.241.147 port 43534
+Jul  3 20:41:27 user-virtual-machine sshd[32684]: pam_unix(sshd:auth): check pass; user unknown
+Jul  3 20:41:27 user-virtual-machine sshd[32684]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.241.147 
+Jul  3 20:41:29 user-virtual-machine sshd[32684]: Failed password for invalid user } from 192.168.241.147 port 43534 ssh2
+Jul  3 20:41:31 user-virtual-machine sshd[32684]: message repeated 2 times: [ Failed password for invalid user } from 192.168.241.147 port 43534 ssh2]
+Jul  3 20:41:31 user-virtual-machine sshd[32684]: Connection closed by invalid user } 192.168.241.147 port 43534 [preauth]

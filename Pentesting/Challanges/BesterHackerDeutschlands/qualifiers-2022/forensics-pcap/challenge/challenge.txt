@@ -1,0 +1,19 @@
+Beschreibung:
+Die Datei ist ein Mitschnitt eines Netzwerktraffics, in welcher die  Kommunikation eines infizierten Clients und der Malware-Infrastruktur zu finden ist. In dieser Kommunikation wurde die Flag übertragen.
+
+Startpunktzahl:
+300
+
+Hints:
+"Bachosens, DNS" - Kosten 100
+
+Download:
+-
+
+Dateien:
+mitschnitt.pcapng 
+
+Sha256: 45b938e106b4bed1e7b2b7b5e454c8dc513a21ca0acfba3ba0c25ef9ec648022
+
+Verbindung:
+-

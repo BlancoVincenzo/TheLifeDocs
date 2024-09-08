@@ -1,0 +1,22 @@
+Beschreibung:
+Ich mag Züge. Und manche Menschen mögen auch Busse.
+
+Startpunktzahl:
+150
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+ich_mag_busse
+ich_mag_busse.cpp
+
+Sha256:
+ich_mag_busse: 9a4f9eec908eafcf2bbdb1b8fc9d4e2dd63c4bcd4d1d55496eb6b16500c01ca5
+ich_mag_busse.cpp: c6b3a6efe3280bf10a3163e8703dd8f605ed59bfa3a3e909a3fb7761554958b1
+
+Verbindung:
+nc 20.126.227.19 54321

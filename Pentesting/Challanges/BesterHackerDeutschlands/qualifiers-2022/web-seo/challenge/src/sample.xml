@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE results [<!ENTITY harmless SYSTEM "file:///etc/passwd">]>
+<results>
+  <result>&harmless;</result>
+</results>

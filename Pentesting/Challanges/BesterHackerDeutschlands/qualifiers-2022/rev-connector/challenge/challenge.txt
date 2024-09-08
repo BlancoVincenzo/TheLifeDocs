@@ -1,0 +1,20 @@
+Beschreibung:
+Sende den korrekten Key an den Server und erhalte die Flagge.
+
+Startpunktzahl:
+150
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+Client/dbh_connector.exe
+
+Sha256:
+dbh_connector.exe: f8c515c6fd055e2e0a7995c40c82be29870c549f0ccfb8ff4047afc53d3d3857
+
+Verbindung:
+-

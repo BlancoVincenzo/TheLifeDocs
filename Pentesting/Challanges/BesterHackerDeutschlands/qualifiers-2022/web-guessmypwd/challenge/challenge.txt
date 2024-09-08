@@ -1,0 +1,22 @@
+Beschreibung:
+Lust auf einen Reiseblog?
+Ziel ist es hier die Credentials eines Users basierend auf privaten 
+veröffentlichten Informationen zu ermitteln (sog. information gathering).
+
+Startpunktzahl:
+150
+
+Hints:
+Hier kann **intelligentes** Bruteforcing sehr hilfreich sein.
+
+Download:
+-
+
+Dateien:
+-
+
+Sha256:
+-
+
+Verbindung:
+DYNAMISCH: -challenge start --> web-guessmypwd

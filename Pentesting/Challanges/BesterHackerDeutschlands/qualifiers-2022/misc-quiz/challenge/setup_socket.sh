@@ -1,0 +1,1 @@
+socat TCP-LISTEN:45377,nodelay,reuseaddr,fork EXEC:"python3 ./game.py"

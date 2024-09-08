@@ -1,0 +1,24 @@
+Beschreibung:
+Die Flag ist in der verschlüsselten Datei (mehr ist da nicht).
+
+Startpunktzahl:
+300
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+dbh_crypter.exe
+flag.txt.dbh.7z
+flag.txt.dbh
+
+Sha256: 
+dbh_crypter.exe: 577528293db8b305ed84ec73efc90e2cc5b2d05fa7ff3a8d385866563ba64dfa
+flag.txt.dbh.7z: 5a5c23a5456672997dc3dd16027535008e2860f37f90b1be44e3241f0df3a575
+flag.txt.dbh : 2cfe7b1628b567d527d7be3711b0b29ac4418843972cecf01263f37e2ccff0ae
+
+Verbindung:
+-

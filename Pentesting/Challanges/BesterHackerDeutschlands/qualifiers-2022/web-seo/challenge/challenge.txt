@@ -1,0 +1,20 @@
+Beschreibung:
+Erlange Informationen zu den Usern des Systems.
+
+Startpunktzahl:
+300
+
+Hints:
+Hier gibt es zwei angedachte Wege zum Ziel.
+
+Download:
+-
+
+Dateien:
+-
+
+Sha256:
+-
+
+Verbindung:
+-

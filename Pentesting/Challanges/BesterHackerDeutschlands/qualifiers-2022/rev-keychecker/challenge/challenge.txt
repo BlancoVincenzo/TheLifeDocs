@@ -1,0 +1,19 @@
+Beschreibung:
+Korrekter Key rein, korrekte Flag raus.
+
+Startpunktzahl:
+300
+
+Hints:
+-
+
+Download:
+-
+
+Dateien:
+keychecker
+
+Sha256: aebf9b47d229c3c9cde2090051e66a15873e94bf50b400a4f6319010e10a0fde
+
+Verbindung:
+nc 20.126.227.19 45420

@@ -1,0 +1,22 @@
+Beschreibung:
+Der freundliche Computer, der grüßt.
+
+Startpunktzahl:
+150
+
+Hints:
+Führe die Funktion spass() mittels eines stackbasierten Bufferoverflows aus.
+
+Download:
+-
+
+Dateien:
+greetings
+greetings.c
+
+Sha256:
+greetings: 6ae4e5c80676b4e61f9eee80ddc58fe105ab6d4aa3140bc950597de5712a283b
+greetings.c: d49d4395fa59136988d8a4b30ce6cf5d824b2d57e0a83f73119dadfbf2bfb060
+
+Verbindung:
+nc 20.126.227.19 57005
