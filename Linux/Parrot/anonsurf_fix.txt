@@ -1,0 +1,10 @@
+/etc/resolve.conf
+--> set nameserver to two entries total 
+naemserver 8.8.8.8
+nameserver 8.8.4.4
+
+Delete other Nameserver entries
+
+Save and Close the file 
+
+sudo systemctl retart NetowrkManager
