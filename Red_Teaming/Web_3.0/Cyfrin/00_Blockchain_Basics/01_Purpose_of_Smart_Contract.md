@@ -18,3 +18,12 @@ like UNISWAP
 **from Brand Based towards math based**
 
 Trust Minimized Contracts aka Unbreakable Promises because of tarnsparency and no alter options
+
+# Summary 
+- Many node operators run blockchain
+- transparency & felxibility <-- no shady things
+- pseudo-anonymous <- real-life identity
+- speed & efficeny
+- immutable (not changeable) &  security (full Integrity)
+- PrivateKey need for data access
+- from brand based to math based
