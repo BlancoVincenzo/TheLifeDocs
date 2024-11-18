@@ -34,6 +34,21 @@ contract SimpleStorage {
 
     //transaction vs calls 
     //if transaction class ware calling view/pure it will cost 
+
+
+    //arrays [0, 3, 4]
+    uint256[] listOfFavoriteNumbers;
+
+    //struct keyword --> own Type
+    struct Person {
+        uint256 favoriteNumber; 
+        string name; 
+    }
+
+    Person public pat = Person(7, "Pat")
+    Person public pat = Person({favoriteNumber: 7, name: "Pat"})
+
+    static vs dynamic array
 }
 
 
