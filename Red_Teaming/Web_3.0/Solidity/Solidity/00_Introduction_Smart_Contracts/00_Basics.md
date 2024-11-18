@@ -107,6 +107,103 @@ contract SimpleStorage {
 ### Key Aspects
 - Both accounts have a persistent key-value store (storage) and a balance in Ether (measured in wei).
 
----
+## The Ethereum Virtual Machine (EVM)
+- a runtime environment
+- sandboxed & isolated (no netwprk access, filesystem etc.)
+
+### Transactions
+- message (binary data and Ether) sent from one to another account
+
+
+### Gas 
+- has to be paid by transaction originator
+- if negative --> out of gas exception
+- each block has a maximum amount of gas
+
+Gas can be refunded if there is some gas left
+- if exception occurs used gas wont be refunded
+- low gas prices may lead to non-execution of transaction
+
+### Storage, Transient Storage, Memory and the Stacl
+
+There are 4 different memory types 
+- storage
+- transient storage
+- memory
+- stack
+
+The Storage
+- persistent between function calls & transactions
+- key-value store: maps 256-bit words to 256-bit words
+- storage should be minimized cause of cost (only most needed)
+- contract can only write / read his own storage
+
+Transient Storage
+- reset at end of transaction 
+- only persist across fucnction calls
+- significantly lower than default storage
+
+Memory
+- clear instance on "memory" for each message call
+- linear and can be addressed on byte-lvl
+- reads limited to 256 bits
+- writes 8 or 256 bit 
+- scales quadtratically
+- memory expends by a word (256 bit) by access a previously untouched memory word
+
+
+### Calldata, Returndata and Code
+
+Calldata region sent to transaction. 
+When Creating a  Contract --> Calldata is the construction code of new contract
+
+External function parameters are always initially stored in Calldata ABI-Encoded
+
+memory --> direct decoding from ABI on function call 
+calldata --> lazily loaded when accessed
+
+Value types and storage pointers are decoded directly onto the stack
+
+#### Returndata 
+
+returns value after a call
+return keyword --> ABI-Encode values into the returndata area
+
+Immutabledata are set only once during contract deployment
+Constant data is fixes at compile time
+
+### Instrucion Set 
+Instructions run only on
+- basic data type (256 bit word)
+- or slices of memeory (or other btyte arrays)
+[List of OpCodes](https://docs.soliditylang.org/en/v0.8.28/yul.html#opcodes)
+
+### message call 
+- contract can call other contracts <-- message calls
+- message calls are similar to transactions
+--> source, target, data payload, Ether, gas and return type
+- evey message consists of top-level message which can create further messag calls
+- contract can decide how much gas with inner message call
+- calls are limited to 1024 --> loops should be prevered over recursive calls 
+
+### Delegatecall and Linraries
+special message call the delegatecall
+target-address is executed in the context of the calling contract
+msg.sender & msg.value do not change values
+
+contract can load dynamically code from different address during runtime
+
+### Logs
+Logs are safed in Bloom Filters
+
+### Selfdestruct
+
+selfdestruct operation --> removes code from blockchain
+Ether can be forever lost when send to selfdestructed contracts
+
+deactivate contracts via inernal state
+
+### Precompiled Contracts
+betwenn 1 and 0xffff inclusive implemented by the EVM
 
 [Further Reading on Solidity](https://docs.soliditylang.org/en/v0.8.28/introduction-to-smart-contracts.html#index-8)
