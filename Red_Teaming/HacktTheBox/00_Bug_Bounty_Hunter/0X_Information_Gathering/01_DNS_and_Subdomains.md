@@ -34,3 +34,27 @@
 | `dig domain.com ANY`           | Retrieves all available DNS records for the domain. (Note: Many DNS servers ignore ANY queries.) |
 
 **Caution:** Some servers can detect and block excessive DNS queries. Use caution and respect rate limits. Always obtain permission before performing extensive DNS reconnaissance on a target.
+
+
+## Sudomains
+
+Subdomains can include developement / stageing envs; Hidden Login Portals; Legacy Applications; Sensitive Information
+
+### Active Subdomain Enumeration
+
+**DNS-Zone-Transfer**   (misconfiguraion ) <-- uncommon due to high security standards
+
+**Brute-Force Enumeration**
+With tools like: 
+- gobuster 
+- dnsenum 
+- fuff 
+
+### Passive Sudomain Enumeration
+
+**Certificate Transparency (CT) logs** <--> SSL / TLS Certificates can list associated subdomains in Subject Alternative Name field
+
+**Google Dorking**
+site: *.domain.com
+
+**Online Tools**
