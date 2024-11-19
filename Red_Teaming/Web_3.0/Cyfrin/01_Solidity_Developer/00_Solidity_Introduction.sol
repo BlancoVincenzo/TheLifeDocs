@@ -34,21 +34,42 @@ contract SimpleStorage {
 
     //transaction vs calls 
     //if transaction class ware calling view/pure it will cost 
+    uint256 listOfNbr; 
 
-
-    //arrays [0, 3, 4]
-    uint256[] listOfFavoriteNumbers;
-
-    //struct keyword --> own Type
     struct Person {
-        uint256 favoriteNumber; 
-        string name; 
+        string name;
+        uint256 favNbrPerson;  
     }
 
-    Person public pat = Person(7, "Pat")
-    Person public pat = Person({favoriteNumber: 7, name: "Pat"})
+    Person public pat = Person({favNbrPerson: 7, name: "pat"});
+    //static array
+    Person[3] public listOfPerson; 
 
-    static vs dynamic array
+    Person[] public listOfPersonTwo; 
+
+    mapping(string => uint256) public nameToNumber; 
+
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        listOfPersonTwo.push(Person(_name, _favoriteNumber));
+        nameToNumber[_name] = _favoriteNumber; 
+    }
+
+    // Write & Read
+    // Stack, Memory, Storage, Transient Storage, Calldata, Code, Returndata
+
+    // Write (not read)
+    // Logs
+
+    //Read (not write)
+    //Transaction data, Chain Data, Gas Data, Program counter
+
+    //caldata, memory, storage
+    //memory and calldata only exists only for one call
+
+    //memory variable can be manipulated
+    //calldata cant be modified
+    //storage permanent that can be modified
+
+    //structs mapping and arrays need memory keyword (string = array of bytes)
 }
-
-
