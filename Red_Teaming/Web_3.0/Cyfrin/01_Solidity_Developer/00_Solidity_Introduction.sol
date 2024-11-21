@@ -47,6 +47,7 @@ contract SimpleStorage {
 
     Person[] public listOfPersonTwo; 
 
+    // Mapping like Map in Java
     mapping(string => uint256) public nameToNumber; 
 
 
@@ -72,4 +73,6 @@ contract SimpleStorage {
     //storage permanent that can be modified
 
     //structs mapping and arrays need memory keyword (string = array of bytes)
+
+    //We work woth Ethereum, Polygon, Arbitrum, Optimism, Zksync
 }
